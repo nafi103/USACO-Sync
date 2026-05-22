@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>USACO Sync Options</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="header">
+        <div class="brand">
+          <img src="../assets/icon-48.png" alt="" width="48" height="48">
+          <div>
+            <h1>USACO Sync</h1>
+            <p>Mark solved USACO Guide links using public competitive programming APIs.</p>
+          </div>
+        </div>
+        <button id="syncNow" type="button">Sync now</button>
+      </header>
+
+      <section class="panel">
+        <h2>Handles</h2>
+        <label>
+          <span>Codeforces</span>
+          <input id="codeforces" autocomplete="off" placeholder="tourist">
+        </label>
+      </section>
+
+      <section class="panel">
+        <h2>Sync</h2>
+        <label class="row">
+          <span>Automatic sync</span>
+          <input id="autoSync" type="checkbox">
+        </label>
+        <label>
+          <span>Interval in minutes</span>
+          <input id="syncInterval" type="number" min="15" step="15">
+        </label>
+      </section>
+
+      <section class="panel">
+        <h2>Status</h2>
+        <div id="status" class="status">Loading...</div>
+      </section>
+
+      <footer class="footer">
+        <button id="save" type="button">Save settings</button>
+        <a href="https://usaco.guide/" target="_blank" rel="noreferrer">Open USACO Guide</a>
+      </footer>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>
